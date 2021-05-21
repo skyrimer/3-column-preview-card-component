@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/skyrimer/3-column-preview-card-component](https://github.com/skyrimer/3-column-preview-card-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://admiring-noyce-b82d28.netlify.app](https://admiring-noyce-b82d28.netlify.app)
 
 ### Built with
 
