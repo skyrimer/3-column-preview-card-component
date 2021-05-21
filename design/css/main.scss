@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+$bright_orange: hsl(31, 77%, 52%);
+$dark_cyan: hsl(184, 100%, 22%);
+$very_dark_cyan: hsl(179, 100%, 13%);
+
+$paragraph_color: hsla(0, 0%, 100%, 0.75);
+$light_gray: hsl(0, 0%, 95%);
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+  background-color: $light_gray;
+}
+.orange {
+  background-color: $bright_orange;
+  button {
+    color: $bright_orange;
+  }
+}
+.cyan {
+  background-color: $dark_cyan;
+  button {
+    color: $dark_cyan;
+  }
+}
+.dark-cyan {
+  background-color: $very_dark_cyan;
+  button {
+    color: $very_dark_cyan;
+  }
+}
+
+.container {
+  margin: 0 auto 5em auto;
+  width: 95%;
+  @media screen and (min-width: 500px) {
+    width: 80%;
+  }
+  max-width: 1440px;
+  .cards-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 5em 0;
+    @media screen and (min-width: 1000px) {
+      margin-top: 0;
+    }
+    .card {
+      flex: 1 0 100%;
+      padding: 4em 2em;
+      @media screen and (min-width: 600px) {
+        flex-basis: 50%;
+      }
+      @media screen and (min-width: 1000px) {
+        flex-basis: 33.3333333333%;
+      }
+      @media screen and (min-width: 1200px) {
+        padding: 4em;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .card-top {
+        margin-bottom: 3em;
+        @media screen and (min-width: 500px) {
+          margin-bottom: 9em;
+        }
+      }
+      button {
+        justify-self: flex-end;
+      }
+      img {
+        margin-bottom: 3em;
+      }
+      h1 {
+        color: $light_gray;
+        text-transform: uppercase;
+        font-family: "Big Shoulders Display", cursive;
+        font-size: 2.8rem;
+        margin-bottom: 0.9em;
+      }
+      p {
+        color: $paragraph_color;
+        font-size: 1.2rem;
+        line-height: 180%;
+      }
+      button {
+        background-color: $light_gray;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 0.6em 1.5em;
+        @media screen and (min-width: 1000px) {
+          padding: 0.75em 1.65em;
+        }
+        @media screen and (min-width: 1500px) {
+          padding: 0.9em 1.8em;
+        }
+        border-radius: 1.5em;
+        border: 2px solid $light_gray;
+        transition: all 0.4s ease;
+        outline: none;
+        &:hover,
+        &:active {
+          background-color: transparent;
+          color: $light_gray;
+        }
+      }
+    }
+  }
+}
